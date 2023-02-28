@@ -1,1 +1,3 @@
 # project_QmlCase
+
+This is a hybrid quantum-classical machine learning model that classifies brain scan images based on the presence of a tumour. `quanvolutional_filter.py` contains the code used for the quantum convolution layers (inspired by [this paper](https://link.springer.com/article/10.1007/s42484-020-00012-y)). `QNN_Final.py` contains the code used to create a hybrid neural network, where variational quantum circuits replace a layer of neurons to use quantum natural gradient descent (inspired by [this paper](https://arxiv.org/pdf/1909.02108.pdf)). Finally, we put the two files together to create a final hybrid model, which can be found in `full_model.py`, which achieved 78.2% accuracy after 15 epochs. 
